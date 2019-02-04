@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+<form action="http://jorgesanchez.net/servicios/practica12.php" method="post">
+<table>
+    <thead>
+    <tr>
+        <th colspan="2">
+            <h1>Formulario de Matriculación</h1>
+         </th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td class="left">
+            <label  for="nombre">Nombre</label>
+        </td>
+        <td>
+            <input type="text" name="nombre" id="nombre">
+
+        </td>
+    </tr>
+    <tr>
+        <td class="left">
+            <label for="apellidos">Apellidos</label>
+        </td>
+        <td>
+            <input type="text" name="apellidos" id="apellidos">
+        </td>
+    </tr>
+    <tr>
+        <td class="left">
+            <label for="contraseña">Contraseña</label>
+        </td>
+        <td>
+            <input type="password" name="contra" id="contraseña">
+        </td>
+    </tr>
+    <tr>
+        <td class="left">
+            <p>Etapa educativa</p>
+        </td>
+        <td class="right">
+            <fieldset>
+                <legend>Seleccione una sola opción</legend>
+                <input type="radio" id="radio1" name="etapa" value="12">
+                <label for="radio1">Primaria (12€)</label><br>
+                <input type="radio" id="radio2" name="etapa" value="30">
+                <label for="radio2">Secundaria (30€)</label><br>
+                <input type="radio" id="radio3" name="etapa" value="30">
+                <label for="radio3">Formación Profesional de grado medio (30€)</label><br>
+                <input type="radio" id="radio4" name="etapa" value="50">
+                <label for="radio4">Bachillerato (50€)</label><br>
+                <input type="radio" id="radio5" name="etapa" value="40">
+                <label for="radio5">Formación Profesional de grado superior (40€)</label><br>
+                <input type="radio" id="radio6" name="etapa" value="700">
+                <label for="radio6">Estudios Universitarios de grado medio (700€)</label><br>
+                <input type="radio" id="radio7" name="etapa" value="900">
+                <label for="radio7">Estudios Universitarios de grado superior (900€)</label><br>
+            </fieldset>
+        </td>
+    </tr>
+    <tr>
+        <td class="left">
+            <p>Otras opciones</p>
+        </td>
+        <td class="right">
+            <fieldset>
+            <legend>Seleccione las opciones pertinentes</legend>
+            <input type="checkbox" id="checkbox1" name="numerosa" value="20">
+            <label for="checkbox1">Familia Numerosa (20%)</label><br>
+            <input type="checkbox" id="checkbox2" name="discapacidad" value="50">
+            <label for="checkbox2">Discapacidad (50%)</label><br>
+            <input type="checkbox" id="checkbox3" name="mayor" value="10">
+            <label for="checkbox3">Mayor de 30 años (10%)</label><br>
+            </fieldset>
+        </td>
+    </tr>
+    </tbody>
+    <tfoot>
+    <tr>
+        <th colspan="2">
+            <button>Calcular</button>
+        </th>
+    </tr>
+    </tfoot>
+</table>
+</form>
+</body>
+</html>
